@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import Table from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 
-class IncentiveTable extends Component {
-  render() {
+function IncentiveTable(props)
+{
     return (
       <Table striped bordered condensed hover>
         <thead>
@@ -20,7 +20,6 @@ class IncentiveTable extends Component {
         </tbody>
       </Table>
     );
-  }
 }
 
 class IncentiveRow extends Component {
