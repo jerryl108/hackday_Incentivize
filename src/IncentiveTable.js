@@ -5,11 +5,11 @@ import { Table } from 'react-bootstrap';
 function IncentiveTable(props)
 {
     return (
-      <Table striped bordered condensed hover>
+      <Table striped bordered condensed hover width="500">
         <thead>
           <tr>
             <th>Assignment</th>
-            <th>Coursse</th>
+            <th>Course</th>
             <th>Due Date</th>
             <th>Incentive</th>
             <th>Currently Held Hostage</th>

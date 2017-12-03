@@ -26,9 +26,12 @@ class App extends Component {
   }
 }
 
+const mountNode = document.getElementById('mountNode');
+
 function renderModal()
 {
-  ReactDOM.render(IncentiveModal, document.getElementById('mountNode'));
+  ReactDOM.render(IncentiveModal, mountNode);
 }
 
 export default App;
+export { mountNode };

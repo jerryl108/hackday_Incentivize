@@ -6,20 +6,25 @@ const IncentiveModal = (
   <div className="static-modal">
     <Modal.Dialog>
       <Modal.Header>
-        <Modal.Title>Modal title</Modal.Title>
+        <Modal.Title>Create an incentive for a class assignment:</Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
-        One fine body...
+        Choose a course:
       </Modal.Body>
 
       <Modal.Footer>
-        <Button>Close</Button>
+        <Button onClick={closeModal}>Close</Button>
         <Button bsStyle="primary">Save changes</Button>
       </Modal.Footer>
 
     </Modal.Dialog>
   </div>
 );
+
+function closeModal()
+{
+  unmountComponentAtNode();
+}
 
 export { IncentiveModal };
